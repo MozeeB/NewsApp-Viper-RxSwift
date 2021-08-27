@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainModulesView" customModule="NewsAppWithRxSwiftAndViper" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amr-qR-nG9">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="344"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berita Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex8-8v-B78">
+                            <rect key="frame" x="138" y="152" width="152" height="41"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                            <color key="textColor" systemColor="systemGray5Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zb5-Iz-wVc">
+                            <rect key="frame" x="190" y="240" width="49" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="changeLeaguage:" destination="-1" eventType="valueChanged" id="gNl-ik-9f4"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ex8-8v-B78" secondAttribute="trailing" constant="138" id="D1t-ho-VRN"/>
+                        <constraint firstItem="ex8-8v-B78" firstAttribute="leading" secondItem="amr-qR-nG9" secondAttribute="leading" constant="138" id="Y6y-qs-CdX"/>
+                        <constraint firstItem="ex8-8v-B78" firstAttribute="top" secondItem="amr-qR-nG9" secondAttribute="top" constant="152" id="xTi-hY-d1S"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCM-dK-PCj">
+                    <rect key="frame" x="0.0" y="310.99999999999994" width="428" height="699.66666666666652"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQR-kM-iHO">
+                            <rect key="frame" x="132" y="323" width="168" height="55"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                            <state key="normal" title="List Berita">
+                                <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="toNewsHome:" destination="-1" eventType="touchUpInside" id="E8p-PG-JlJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="amr-qR-nG9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="65g-0E-qBC"/>
+                <constraint firstItem="SCM-dK-PCj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="AAQ-zt-Hok"/>
+                <constraint firstItem="SCM-dK-PCj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dqv-kb-ega"/>
+                <constraint firstItem="SCM-dK-PCj" firstAttribute="trailing" secondItem="amr-qR-nG9" secondAttribute="trailing" id="NCx-hj-ILv"/>
+                <constraint firstItem="SCM-dK-PCj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="267" id="SlR-ee-YtD"/>
+                <constraint firstItem="amr-qR-nG9" firstAttribute="height" secondItem="SCM-dK-PCj" secondAttribute="height" multiplier="0.491557" id="ltZ-io-OMj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="amr-qR-nG9" secondAttribute="bottom" constant="548" id="tSo-Nm-W7c"/>
+                <constraint firstItem="SCM-dK-PCj" firstAttribute="leading" secondItem="amr-qR-nG9" secondAttribute="leading" id="we1-h9-QqG"/>
+            </constraints>
+            <point key="canvasLocation" x="82.608695652173921" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
